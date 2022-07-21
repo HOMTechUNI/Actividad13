@@ -8,7 +8,9 @@ public class CompoundGraphic implements Graphic{
     }
     @Override
     public void draw(){
+        System.out.println("-------Start print Compound--------");
         for (Graphic g:children) g.draw();
+        System.out.println("--------End print Compound---------");
     }
 
     public void add(Graphic graphic){
