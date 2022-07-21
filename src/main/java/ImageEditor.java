@@ -3,19 +3,19 @@ public class ImageEditor {
         CompoundGraphic graphic = new CompoundGraphic();
         Dot dot = new Dot(7, 6);
         Circle circle = new Circle(100, 521, 94);
-        System.out.println("Adding Dot to CompoundGraphic\n");
+        //Adding Dot to CompoundGraphic
         graphic.add(dot);
-        System.out.println("Adding Circle to CompoundGraphic\n");
+        //Adding Circle to CompoundGraphic
         graphic.add(circle);
-        System.out.println("Printing CompoundGraphic:\n");
+        //Printing CompoundGraphics
         graphic.draw();
-        System.out.println("Moving all elements of CompoundGraphic to x = 73, y = 32\n");
+        //Moving all elements of CompoundGraphic to x = 73, y = 32
         graphic.move(73, 32);
-        System.out.println("Printing CompoundGraphic after moving\n");
+        //Printing CompoundGraphic after moving
         graphic.draw();
-        System.out.println("Removing Circle from CompoundGraphic\n");
+        //Removing Circle from CompoundGraphic
         graphic.remove(circle);
-        System.out.println("Printing CompoundGraphic after removing Circle\n");
+        //Printing CompoundGraphic after removing Circle
         graphic.draw();
     }
 }
