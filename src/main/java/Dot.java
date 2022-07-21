@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Dot implements Graphic{
     int x, y;
     public Dot(int x, int y){
@@ -12,7 +14,7 @@ public class Dot implements Graphic{
     }
 
     @Override
-    public void draw() {
-
+    public void draw(Graphics dot) {
+        dot.fillOval(x, y, 10, 10);
     }
 }

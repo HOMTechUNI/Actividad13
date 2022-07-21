@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.ArrayList;
 
 public class CompountGraphic implements Graphic{
@@ -7,8 +8,8 @@ public class CompountGraphic implements Graphic{
         for (Graphic g:children) g.move(x,y);
     }
     @Override
-    public void draw(){
-
+    public void draw(Graphics graphic){
+        for (Graphic g:children) g.draw(graphic);
     }
 
     public void add(Graphic graphic){
