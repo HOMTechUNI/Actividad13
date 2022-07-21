@@ -14,6 +14,6 @@ public class Dot implements Graphic {
 
     @Override
     public void draw() {
-        System.out.println("Printing Dot in x = " + x + ", y = " + y +"\n");
+        System.out.println("Printing Dot in x = " + x + ", y = " + y + "\n");
     }
 }
