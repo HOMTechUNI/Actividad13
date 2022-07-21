@@ -13,5 +13,9 @@ public class ImageEditor {
         graphic.move(73, 32);
         System.out.println("Printing CompoundGraphic after moving\n");
         graphic.draw();
+        System.out.println("Removing Circle from CompoundGraphic\n");
+        graphic.remove(circle);
+        System.out.println("Printing CompoundGraphic after removing Circle\n");
+        graphic.draw();
     }
 }
