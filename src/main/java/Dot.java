@@ -1,8 +1,7 @@
-import java.awt.*;
-
-public class Dot implements Graphic{
+public class Dot implements Graphic {
     int x, y;
-    public Dot(int x, int y){
+
+    public Dot(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -14,7 +13,7 @@ public class Dot implements Graphic{
     }
 
     @Override
-    public void draw(Graphics dot) {
-        dot.fillOval(x, y, 10, 10);
+    public void draw() {
+        System.out.println("Printing Dot in x = " + x + ", y = " + y +"\n");
     }
 }

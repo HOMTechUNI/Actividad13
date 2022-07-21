@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class Circle extends Dot{
     int radius;
     public Circle(int x, int y, int radius) {
@@ -7,7 +5,7 @@ public class Circle extends Dot{
         this.radius = radius;
     }
     @Override
-    public void draw(Graphics circle) {
-        circle.drawOval(x, y, radius*2, radius*2);
+    public void draw() {
+        System.out.println("Printing Circle in x = " + x + ", y = " + y + " with radius = " + radius +"\n");
     }
 }
